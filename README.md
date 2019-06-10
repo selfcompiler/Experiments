@@ -50,3 +50,17 @@ private ThreadLocal myThreadLocal = new ThreadLocal<String>() {
 };    
 Now all threads will see the same initial value when calling get() before having called set() .
 
+#COUNTDOWNLATCH 
+
+
+
+What is CountDownLatch in Java ?\n
+CountDownLatch in Java is a kind of synchronizer which allows one Thread  to wait for one or more Threads before starts processing. This is very crucial requirement and often needed in server side core Java application and having this functionality built-in as CountDownLatch greatly simplifies the development. CountDownLatch in Java is introduced on Java 5 along with other concurrent utilities like CyclicBarrier, Semaphore, ConcurrentHashMap and BlockingQueue in java.util.concurrent package. In this Java concurrency tutorial we will  what is CountDownLatch in Java, How CountDownLatch works in Java, an example of CountDownLatch in Java and finally some worth noting points about this concurrent utility. You can also implement same functionality using  wait and notify mechanism in Java but it requires lot of code and getting it write in first attempt is tricky,  With CountDownLatch it can  be done in just few lines. CountDownLatch also allows flexibility on number of thread for which main thread should wait, It can wait for one thread or n number of thread, there is not much change on code.  Key point is that you need to figure out where to use CountDownLatch in Java application which is not difficult if you understand What is CountDownLatch in Java, What does CountDownLatch do and How CountDownLatch works in Java. 
+
+
+How CountDownLatch works in Java ?\n
+CountDownLatch Example in Java 5 6 7Now we know What is CountDownLatch in Java, its time to find out How CountDownLatch works in Java. CountDownLatch works in latch principle,  main thread will wait until Gate is open. One thread waits for n number of threads specified while creating CountDownLatch in Java. Any thread, usually main thread of application,  which calls CountDownLatch.await() will wait until count reaches zero or its interrupted by another Thread. All other thread are required to do count down by calling CountDownLatch.countDown() once they are completed or ready to the job. as soon as count reaches zero, Thread awaiting starts running. One of the disadvantage of CountDownLatch is that its not reusable once count reaches to zero you can not use CountDownLatch any more, but don't worry Java concurrency API has another concurrent utility called CyclicBarrier for such requirements.
+
+
+
+
