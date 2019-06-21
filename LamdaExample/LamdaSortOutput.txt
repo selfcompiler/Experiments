@@ -1,0 +1,24 @@
+Before Sort
+selfcompiler
+fselfcompiler
+aselfcompiler
+bselfcompiler
+cselfcompiler
+dselfcompiler
+eselfcompiler
+After Sort
+dselfcompiler
+aselfcompiler
+fselfcompiler
+selfcompiler
+eselfcompiler
+cselfcompiler
+bselfcompiler
+After Sort With Lamda
+dselfcompiler
+aselfcompiler
+fselfcompiler
+selfcompiler
+eselfcompiler
+cselfcompiler
+bselfcompiler
