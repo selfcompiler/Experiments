@@ -1,5 +1,5 @@
 package java8.OptionalExample;
-
+// https://www.mkyong.com/java8/java-8-optional-in-depth/
 import com.sun.tools.internal.ws.wsdl.document.soap.SOAPUse;
 
 import java.util.Optional;
