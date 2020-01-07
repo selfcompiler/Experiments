@@ -28,3 +28,15 @@ public class ForEachExample {
 
     }
 }
+
+
+/*
+OutPut :
+Item : A Count : 10
+Item : B Count : 20
+Item : C Count : 30
+Item : D Count : 40
+Item : E Count : 50
+Item : F Count : 60
+Key=A Value=10Key=B Value=20Key=C Value=30Key=D Value=40Key=E Value=50Key=F Value=60Key=A Value=10Key=B Value=20Key=C Value=30Key=D Value=40Key=E Value=50Key=F Value=60
+ */
